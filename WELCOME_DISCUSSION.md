@@ -17,8 +17,8 @@ Es un sistema open source que:
 
 ## 🚀 Cómo empezar
 
-1. **Si eres nuevo**: Lee el [README](README.md) y sigue la [Guía de Instalación](docs/INSTALLATION.md)
-2. **Si quieres contribuir**: Revisa [CONTRIBUTING](docs/CONTRIBUTING.md)
+1. **Si eres nuevo**: Lee el [README](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/blob/main/README.md) y sigue la [Guía de Instalación](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/blob/main/docs/INSTALLATION.md)
+2. **Si quieres contribuir**: Revisa [CONTRIBUTING](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/blob/main/docs/CONTRIBUTING.md)
 3. **Si tienes dudas**: Usa la categoría Q&A aquí en Discussions
 4. **Si tienes ideas**: Compártelas en la categoría Ideas
 
@@ -28,7 +28,7 @@ Actualmente:
 - ✅ BBVA (completo)
 - 🚧 Más bancos próximamente...
 
-**¡Tu banco no está?** [Abre una discussion](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/new?category=ideas) o mejor aún, [contribuye con un parser](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/issues/new?template=bank_parser.md).
+**¡Tu banco no está?** [Abre una discussion](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/new/choose) o mejor aún, [contribuye con un parser](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/issues/new?assignees=&labels=enhancement%2C+bank-parser&projects=&template=bank_parser.md&title=%5BPARSER%5D+A%C3%B1adir+soporte+para+%5BNOMBRE_BANCO%5D).
 
 ## 🎨 Comparte tu Experiencia
 
@@ -37,7 +37,7 @@ Actualmente:
 - Análisis interesante
 - Integración con otras herramientas
 
-¡Compártelo en [Show and Tell](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/categories/show-and-tell)!
+¡Compártelo en [Show and Tell](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/new?category=show-and-tell)!
 
 ## 🗺️ Roadmap
 
@@ -48,7 +48,7 @@ Próximas características planeadas:
 - 📊 Análisis predictivo
 - 🔄 Sincronización automática
 
-Vota tus favoritas o propón nuevas en [Ideas](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/categories/ideas).
+Vota tus favoritas o propón nuevas en [Ideas](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/new?category=ideas).
 
 ## 💭 Mi Visión
 
@@ -79,6 +79,6 @@ Gracias por ser parte de esta comunidad. Cada contribución, por pequeña que se
 ---
 
 **¿Listo para empezar?** 
-- 💬 [Preséntate aquí](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/new?category=general)
-- ❓ [Haz tu primera pregunta](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/new?category=q-a)
-- 💡 [Comparte una idea](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/new?category=ideas)
+- 💬 [Preséntate aquí](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/new?category=General)
+- ❓ [Haz tu primera pregunta](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/new?category=Q%26A)
+- 💡 [Comparte una idea](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/new?category=Ideas)
