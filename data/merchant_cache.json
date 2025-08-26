@@ -1,0 +1,29 @@
+{
+  "cacenca gasolinera": {
+    "name": "CACENCA GASOLINERA",
+    "category": "Transportation",
+    "confidence": 0.9,
+    "business_type": "Gas station",
+    "location": "Gelida, Catalonia, Spain",
+    "last_updated": "2025-08-24T21:07:38.452783",
+    "frequency": 1
+  },
+  "carrefour sant cugat": {
+    "name": "CARREFOUR SANT CUGAT",
+    "category": "Groceries",
+    "confidence": 0.9,
+    "business_type": "Grocery Store",
+    "location": "Sant Cugat del Vallès",
+    "last_updated": "2025-08-24T21:07:43.150190",
+    "frequency": 1
+  },
+  "16307 sant cugat": {
+    "name": "16307 SANT CUGAT",
+    "category": "Transportation",
+    "confidence": 0.8,
+    "business_type": "Parking Meter",
+    "location": "Sant Cugat del Vallès",
+    "last_updated": "2025-08-24T21:07:46.520186",
+    "frequency": 1
+  }
+}
