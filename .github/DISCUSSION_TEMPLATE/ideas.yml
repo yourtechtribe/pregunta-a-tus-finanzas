@@ -1,0 +1,63 @@
+title: "[IDEA] "
+labels: ["idea", "discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Comparte tu Idea
+        ¿Tienes una idea para mejorar el proyecto? ¡Compártela aquí!
+        
+  - type: input
+    id: title
+    attributes:
+      label: Título de la Idea
+      description: Resume tu idea en una frase
+      placeholder: "Integración con Google Sheets para importar datos"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción
+      description: Explica tu idea en detalle
+      placeholder: |
+        Mi idea es...
+        Esto permitiría...
+        Los usuarios podrían...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Beneficios
+      description: ¿Qué beneficios traería esta idea?
+      placeholder: |
+        - Facilitar la importación de datos
+        - Automatizar el proceso
+        - Mejorar la experiencia de usuario
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complejidad Estimada
+      options:
+        - Baja (días)
+        - Media (semanas)
+        - Alta (meses)
+        - No estoy seguro
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: help
+    attributes:
+      label: ¿Puedes ayudar a implementarlo?
+      options:
+        - label: Puedo ayudar con el código
+        - label: Puedo ayudar con el diseño
+        - label: Puedo ayudar con la documentación
+        - label: Puedo ayudar a testear

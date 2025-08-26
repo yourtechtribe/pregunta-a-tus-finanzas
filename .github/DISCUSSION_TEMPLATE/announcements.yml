@@ -1,0 +1,45 @@
+title: "[ANUNCIO] "
+labels: ["announcement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Anuncio Importante
+        Usa esta categoría para anuncios oficiales del proyecto.
+        
+  - type: input
+    id: title
+    attributes:
+      label: Título del Anuncio
+      description: Un título claro y conciso
+      placeholder: "Nueva versión v1.0.0 disponible"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: type
+    attributes:
+      label: Tipo de Anuncio
+      options:
+        - Nueva versión
+        - Cambio importante
+        - Evento/Meetup
+        - Colaboración
+        - Otro
+    validations:
+      required: true
+      
+  - type: textarea
+    id: content
+    attributes:
+      label: Contenido del Anuncio
+      description: Describe el anuncio en detalle
+    validations:
+      required: true
+      
+  - type: textarea
+    id: action
+    attributes:
+      label: Acción Requerida
+      description: ¿Qué deben hacer los usuarios?
+      placeholder: "Actualizar a la nueva versión con: pip install --upgrade"

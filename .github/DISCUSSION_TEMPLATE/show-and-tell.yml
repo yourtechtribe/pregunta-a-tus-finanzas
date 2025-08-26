@@ -1,0 +1,68 @@
+title: "[DEMO] "
+labels: ["show-and-tell", "community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Muestra tu Implementación
+        ¿Has construido algo genial con este proyecto? ¡Compártelo con la comunidad!
+        
+  - type: input
+    id: title
+    attributes:
+      label: Título de tu Proyecto
+      description: ¿Qué has construido?
+      placeholder: "Dashboard interactivo para análisis de gastos"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción
+      description: Cuéntanos sobre tu implementación
+      placeholder: |
+        He creado...
+        Usa el proyecto para...
+        Las principales características son...
+    validations:
+      required: true
+      
+  - type: input
+    id: demo_link
+    attributes:
+      label: Link de Demo (opcional)
+      description: URL de tu demo o repositorio
+      placeholder: "https://github.com/usuario/mi-proyecto"
+      
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots/Videos
+      description: Comparte imágenes o videos de tu proyecto
+      placeholder: "Arrastra imágenes aquí o pega links"
+      
+  - type: textarea
+    id: stack
+    attributes:
+      label: Stack Técnico
+      description: ¿Qué tecnologías usaste además del proyecto base?
+      placeholder: |
+        - Streamlit para el dashboard
+        - Plotly para gráficos
+        - PostgreSQL para almacenamiento
+        
+  - type: textarea
+    id: learnings
+    attributes:
+      label: Aprendizajes
+      description: ¿Qué aprendiste durante la implementación?
+      
+  - type: checkboxes
+    id: share
+    attributes:
+      label: Compartir Código
+      options:
+        - label: Mi código es open source
+        - label: Puedo compartir fragmentos específicos
+        - label: Acepto PRs y contribuciones
