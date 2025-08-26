@@ -125,6 +125,8 @@ nohup.out
 # Cache
 .cache/
 *.cache
+merchant_cache.json
+data/merchant_cache.json
 
 # Secrets
 *.key

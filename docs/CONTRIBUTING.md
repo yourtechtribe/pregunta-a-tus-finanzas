@@ -5,7 +5,7 @@
 ## 📋 Cómo Contribuir
 
 ### 1. Reportar Bugs
-- Usa el [template de issues](https://github.com/albertgilopez/pregunta-tus-finanzas/issues/new)
+- Usa el [template de issues](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/issues/new)
 - Incluye:
   - Descripción clara del problema
   - Pasos para reproducir
@@ -13,7 +13,7 @@
   - Logs si es posible
 
 ### 2. Sugerir Mejoras
-- Abre una [discusión](https://github.com/albertgilopez/pregunta-tus-finanzas/discussions)
+- Abre una [discusión](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions)
 - Explica el caso de uso
 - Propón una solución si la tienes
 
@@ -61,8 +61,8 @@ Si encuentras PII no detectados:
 
 ```bash
 # 1. Fork y clonar
-git clone https://github.com/tu-usuario/pregunta-tus-finanzas
-cd pregunta-tus-finanzas
+git clone https://github.com/tu-usuario/pregunta-a-tus-finanzas
+cd pregunta-a-tus-finanzas
 
 # 2. Crear rama
 git checkout -b feature/nuevo-banco-santander
@@ -142,9 +142,9 @@ Todos los contribuidores serán listados en:
 
 ## 📞 Contacto
 
-- Issues: [GitHub Issues](https://github.com/albertgilopez/pregunta-tus-finanzas/issues)
-- Discusiones: [GitHub Discussions](https://github.com/albertgilopez/pregunta-tus-finanzas/discussions)
-- Email: albert@himia.app
+- Issues: [GitHub Issues](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/issues)
+- Discusiones: [GitHub Discussions](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions)
+- Email: albert.gil@yourtechtribe.com
 
 ## 📜 Licencia
 

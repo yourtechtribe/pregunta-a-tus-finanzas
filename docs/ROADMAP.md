@@ -67,7 +67,7 @@
 
 ## 🤝 Cómo Contribuir al Roadmap
 
-1. **Vota** las características que más te interesen en [Discussions](https://github.com/albertgilopez/pregunta-tus-finanzas/discussions)
+1. **Vota** las características que más te interesen en [Discussions](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions)
 2. **Propón** nuevas ideas con casos de uso claros
 3. **Contribuye** con código para acelerar el desarrollo
 

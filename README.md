@@ -17,8 +17,8 @@ Sistema open source para analizar extractos bancarios usando RAG (Retrieval-Augm
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/albertgilopez/pregunta-tus-finanzas
-cd pregunta-tus-finanzas
+git clone https://github.com/yourtechtribe/pregunta-a-tus-finanzas
+cd pregunta-a-tus-finanzas
 
 # Instalar dependencias
 pip install -r requirements.txt
@@ -182,7 +182,6 @@ Ver [CONTRIBUTING.md](docs/CONTRIBUTING.md) para más detalles.
 - [Guía de instalación](docs/INSTALLATION.md) - Setup completo paso a paso
 - [Roadmap del proyecto](docs/ROADMAP.md) - Próximas funcionalidades
 - [Guía de contribución](docs/CONTRIBUTING.md) - Cómo añadir tu banco
-- [Artículo en Medium](docs/articles/01-construyendo-chatgpt-finanzas.md) - Tutorial completo
 
 ## 🛡️ Privacidad y Seguridad
 
@@ -208,7 +207,7 @@ MIT License - Ver [LICENSE](LICENSE) para detalles
 **Albert Gil López**
 - CTO @ M.IA (himia.app)
 - LinkedIn: [albertgilopez](https://linkedin.com/in/albertgilopez)
-- Email: albert@himia.app
+- Email: albert.gil@yourtechtribe.com
 
 ## 🙏 Agradecimientos
 
@@ -221,6 +220,6 @@ MIT License - Ver [LICENSE](LICENSE) para detalles
 
 ⭐ Si te gusta el proyecto, dale una estrella en GitHub!
 
-🐛 Encuentra un bug? [Abre un issue](https://github.com/albertgilopez/pregunta-tus-finanzas/issues)
+🐛 Encuentra un bug? [Abre un issue](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/issues)
 
-💡 Tienes una idea? [Inicia una discusión](https://github.com/albertgilopez/pregunta-tus-finanzas/discussions)
+💡 Tienes una idea? [Inicia una discusión](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions)
