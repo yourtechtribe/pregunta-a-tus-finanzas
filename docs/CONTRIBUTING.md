@@ -1,151 +1,175 @@
-# 🤝 Guía de Contribución
+# Contributing to Pregunta tus Finanzas
 
-¡Gracias por tu interés en contribuir a Pregunta a tus Finanzas! Este proyecto es open source y toda ayuda es bienvenida.
+¡Gracias por tu interés en contribuir! Este proyecto es open source y todas las contribuciones son bienvenidas.
 
-## 📋 Cómo Contribuir
+## 🚀 Quick Start para Contribuidores
 
-### 1. Reportar Bugs
-- Usa el [template de issues](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/issues/new)
-- Incluye:
-  - Descripción clara del problema
-  - Pasos para reproducir
-  - Comportamiento esperado vs actual
-  - Logs si es posible
+1. **Fork el repositorio**
+2. **Clone su fork**:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/pregunta-a-tus-finanzas
+   cd pregunta-a-tus-finanzas
+   ```
 
-### 2. Sugerir Mejoras
-- Abre una [discusión](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions)
-- Explica el caso de uso
-- Propón una solución si la tienes
+3. **Setup automático**:
+   ```bash
+   chmod +x setup.sh
+   ./setup.sh
+   ```
 
-### 3. Añadir Soporte para Nuevos Bancos
+4. **Configure su API key** en `.env`:
+   ```
+   OPENAI_API_KEY=sk-your-key-here
+   ```
 
-Este es el tipo de contribución más valioso. Para añadir un nuevo banco:
+5. **Ejecute los tests**:
+   ```bash
+   chmod +x run_tests.sh
+   ./run_tests.sh
+   ```
 
-#### Paso 1: Crear el Extractor
+## 📝 Proceso de Contribución
 
-```python
-# src/extractors/tu_banco_extractor.py
-from src.extractors.base_extractor import BaseExtractor
+1. **Cree una rama** para su feature:
+   ```bash
+   git checkout -b feature/mi-nueva-funcionalidad
+   ```
 
-class TuBancoExtractor(BaseExtractor):
-    def extract_from_csv(self, file_path):
-        # Implementar lógica específica del banco
-        pass
+2. **Haga sus cambios** siguiendo las guías de estilo
+
+3. **Ejecute los tests** para verificar que todo funciona:
+   ```bash
+   ./run_tests.sh
+   ```
+
+4. **Commit sus cambios**:
+   ```bash
+   git commit -m "feat: Descripción de la nueva funcionalidad"
+   ```
+
+5. **Push a su fork**:
+   ```bash
+   git push origin feature/mi-nueva-funcionalidad
+   ```
+
+6. **Abra un Pull Request** desde GitHub
+
+## 🎯 Áreas de Contribución
+
+### Alta Prioridad
+- 🏦 **Nuevos extractores bancarios**: Añadir soporte para más bancos
+- 📄 **Extractor PDF**: Implementar extracción de PDFs
+- 🧪 **Tests**: Aumentar cobertura de tests
+- 📚 **Documentación**: Mejorar y traducir documentación
+
+### Features Deseados
+- 🌐 **Interfaz Web**: Dashboard con Streamlit/Gradio
+- 📊 **Visualizaciones**: Gráficos y reportes mejorados
+- 🤖 **Más modelos LLM**: Soporte para Claude, Llama, etc.
+- 🔐 **Seguridad**: Mejoras en anonimización y encriptación
+
+## 💻 Guías de Desarrollo
+
+### Estructura del Código
+
+```
+src/
+├── extractors/      # Parsers de extractos bancarios
+├── processors/      # Procesadores de datos
+├── agents/          # Agentes de categorización
+└── rag/            # Implementación RAG/LightRAG
 ```
 
-#### Paso 2: Añadir Tests
+### Añadir un Nuevo Banco
 
-```python
-# tests/test_tu_banco.py
-def test_tu_banco_extraction():
-    extractor = TuBancoExtractor()
-    result = extractor.extract_from_csv("sample.csv")
-    assert len(result) > 0
-```
+1. Cree un nuevo archivo en `src/extractors/`:
+   ```python
+   # src/extractors/mi_banco_extractor.py
+   class MiBancoExtractor(BaseExtractor):
+       def extract(self, file_path):
+           # Implementar lógica de extracción
+           pass
+   ```
 
-#### Paso 3: Documentar
+2. Añada tests en `tests/`:
+   ```python
+   # tests/test_mi_banco_extractor.py
+   def test_mi_banco_extraction():
+       # Tests para el nuevo extractor
+       pass
+   ```
 
-Añadir en `docs/SUPPORTED_BANKS.md`:
-- Formato del CSV/Excel esperado
-- Peculiaridades del banco
-- Ejemplo de uso
+3. Documente el formato soportado en `docs/`
 
-### 4. Mejorar la Anonimización
+### Estilo de Código
 
-Si encuentras PII no detectados:
-1. Añade el patrón en `src/processors/adaptive_anonymizer.py`
-2. Incluye tests para el nuevo patrón
-3. Documenta el tipo de PII
+- **Python**: Seguimos PEP 8
+- **Docstrings**: Usar formato Google
+- **Type hints**: Requeridos para funciones públicas
+- **Tests**: Mínimo 80% cobertura para nuevas features
 
-## 🔧 Configuración del Entorno de Desarrollo
+### Commit Messages
 
+Usamos [Conventional Commits](https://www.conventionalcommits.org/):
+
+- `feat:` Nueva funcionalidad
+- `fix:` Corrección de bugs
+- `docs:` Cambios en documentación
+- `test:` Añadir o modificar tests
+- `refactor:` Refactorización sin cambios funcionales
+- `perf:` Mejoras de performance
+- `chore:` Tareas de mantenimiento
+
+## 🧪 Testing
+
+### Ejecutar todos los tests:
 ```bash
-# 1. Fork y clonar
-git clone https://github.com/tu-usuario/pregunta-a-tus-finanzas
-cd pregunta-a-tus-finanzas
-
-# 2. Crear rama
-git checkout -b feature/nuevo-banco-santander
-
-# 3. Instalar en modo desarrollo
-pip install -r requirements.txt
-pip install -e .
-
-# 4. Ejecutar tests
-pytest tests/
+./run_tests.sh
 ```
 
-## 📝 Estándares de Código
-
-- **Python 3.8+**
-- **PEP 8** para estilo
-- **Type hints** cuando sea posible
-- **Docstrings** en todas las funciones públicas
-- **Tests** para nueva funcionalidad
-
-### Ejemplo de Docstring
-
-```python
-def extract_transactions(file_path: str) -> List[Dict]:
-    """
-    Extrae transacciones de un archivo bancario.
-    
-    Args:
-        file_path: Ruta al archivo CSV/Excel
-        
-    Returns:
-        Lista de diccionarios con las transacciones
-        
-    Raises:
-        ValueError: Si el formato no es válido
-    """
+### Ejecutar tests específicos:
+```bash
+pytest tests/test_bbva_extractor.py -v
 ```
 
-## 🚀 Proceso de Pull Request
-
-1. **Fork** el repositorio
-2. **Crea una rama** descriptiva: `feature/banco-santander`
-3. **Commits atómicos** con mensajes claros
-4. **Tests pasando** (incluye nuevos si es necesario)
-5. **Actualiza docs** si cambias funcionalidad
-6. **PR con descripción** completa
-
-### Template de PR
-
-```markdown
-## Descripción
-Breve descripción del cambio
-
-## Tipo de cambio
-- [ ] Bug fix
-- [ ] Nueva funcionalidad
-- [ ] Mejora de rendimiento
-- [ ] Documentación
-
-## Testing
-- [ ] Tests existentes pasan
-- [ ] Nuevos tests añadidos
-- [ ] Probado manualmente
-
-## Checklist
-- [ ] Código sigue los estándares
-- [ ] Documentación actualizada
-- [ ] Sin datos sensibles
+### Verificar cobertura:
+```bash
+pytest --cov=src tests/
 ```
 
-## 🏆 Reconocimiento
+## 📋 Checklist para Pull Requests
 
-Todos los contribuidores serán listados en:
-- README.md
-- CONTRIBUTORS.md
-- Releases notes
+- [ ] El código sigue el estilo del proyecto
+- [ ] He añadido tests para mi código
+- [ ] Todos los tests pasan
+- [ ] He actualizado la documentación
+- [ ] He añadido una entrada en CHANGELOG.md
+- [ ] El commit message sigue las convenciones
 
-## 📞 Contacto
+## 🐛 Reportar Bugs
 
-- Issues: [GitHub Issues](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/issues)
-- Discusiones: [GitHub Discussions](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions)
-- Email: albert.gil@yourtechtribe.com
+Para reportar bugs, abra un [Issue](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/issues) con:
+
+1. Descripción del problema
+2. Pasos para reproducirlo
+3. Comportamiento esperado vs actual
+4. Logs o mensajes de error
+5. Versión de Python y sistema operativo
+
+## 💬 Preguntas y Soporte
+
+- **Discusiones**: Use [GitHub Discussions](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions)
+- **Chat**: Únase a nuestro [Discord/Slack](#) (próximamente)
+- **Email**: albert.gil@yourtechtribe.com
 
 ## 📜 Licencia
 
-Al contribuir, aceptas que tu código será licenciado bajo MIT License.
+Al contribuir, acepta que sus contribuciones serán licenciadas bajo la misma licencia MIT del proyecto.
+
+## 🙏 Agradecimientos
+
+¡Gracias a todos los contribuidores que hacen este proyecto posible!
+
+---
+
+**¿Listo para contribuir?** ¡Fork el proyecto y empiece hoy mismo! 🚀

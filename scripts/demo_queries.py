@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 
-from src.rag.adaptive_lightrag import AdaptiveLightRAG
+from src.rag.lightrag_simple import SimpleLightRAG
 import json
 
 
@@ -20,7 +20,7 @@ def run_demo():
     
     # Inicializar sistema
     print("\n📦 Inicializando sistema...")
-    rag = AdaptiveLightRAG()
+    rag = SimpleLightRAG()
     
     # Cargar datos
     embeddings_path = 'data/embeddings/chunks_with_embeddings_lightrag.json'

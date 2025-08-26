@@ -162,7 +162,13 @@ class BBVAExtractor:
             'categorization_method': 'GPT-5-nano' if (use_gpt and use_gpt5) else 'GPT-4o' if use_gpt else 'Rule-based'
         }
         
-        return processed_data
+        # Ensure we return with status for compatibility
+        return {
+            'status': 'success',
+            'transactions': processed_data['transactions'],
+            'metadata': processed_data['metadata'],
+            'summary': processed_data.get('summary', {})
+        }
     
     def _extract_excel(self, file_path: Path) -> pd.DataFrame:
         """
@@ -338,13 +344,20 @@ class BBVAExtractor:
         for t in transactions:
             t['date'] = t['date'].strftime('%d/%m/%Y')  # Formato español
             t['value_date'] = t['value_date'].strftime('%d/%m/%Y')  # Formato español
+            t['concept'] = t['description']  # Add concept field for compatibility
         
         return {
             'transactions': transactions,
             'statistics': stats,
+            'summary': stats,  # Add summary for compatibility
             'period': {
                 'start': df['date'].min().strftime('%d/%m/%Y'),  # Formato español
                 'end': df['date'].max().strftime('%d/%m/%Y')  # Formato español
+            },
+            'metadata': {
+                'period': f"{df['date'].min().strftime('%d/%m/%Y')} - {df['date'].max().strftime('%d/%m/%Y')}",
+                'total_income': stats.get('total_income', 0),
+                'total_expenses': stats.get('total_expenses', 0)
             }
         }
     

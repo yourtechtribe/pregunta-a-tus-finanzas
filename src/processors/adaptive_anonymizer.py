@@ -683,6 +683,34 @@ class AdaptiveAnonymizer:
         with open(self.patterns_file, 'w') as f:
             json.dump(self.learned_patterns, f, indent=2)
     
+    def anonymize_transactions(self, transactions: List[Dict]) -> List[Dict]:
+        """
+        Anonimiza una lista de transacciones bancarias.
+        
+        Args:
+            transactions: Lista de diccionarios con transacciones
+            
+        Returns:
+            Lista de transacciones anonimizadas
+        """
+        anonymized_transactions = []
+        
+        for transaction in transactions:
+            # Copiar transacción
+            anon_tx = transaction.copy()
+            
+            # Anonimizar campos sensibles
+            if 'concept' in anon_tx:
+                anon_tx['concept'] = self.anonymize_text(anon_tx['concept'])
+            if 'description' in anon_tx:
+                anon_tx['description'] = self.anonymize_text(anon_tx['description'])
+            if 'notes' in anon_tx:
+                anon_tx['notes'] = self.anonymize_text(anon_tx['notes'])
+                
+            anonymized_transactions.append(anon_tx)
+            
+        return anonymized_transactions
+    
     def get_statistics(self) -> Dict:
         """Obtiene estadísticas de procesamiento"""
         if not self.processing_stats:

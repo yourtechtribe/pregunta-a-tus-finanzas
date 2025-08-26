@@ -20,10 +20,13 @@ Sistema open source para analizar extractos bancarios usando RAG (Retrieval-Augm
 git clone https://github.com/yourtechtribe/pregunta-a-tus-finanzas
 cd pregunta-a-tus-finanzas
 
-# Instalar dependencias
-pip install -r requirements.txt
+# Opción 1: Setup automático (RECOMENDADO)
+chmod +x setup.sh
+./setup.sh
 
-# Configurar API keys de OpenAI
+# Opción 2: Setup manual
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
 cp .env.example .env
 # Editar .env y añadir: OPENAI_API_KEY=sk-...
 
