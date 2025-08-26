@@ -1,0 +1,130 @@
+{
+  "transactions": [
+    {
+      "date": "01/07/2025",
+      "value_date": "01/07/2025",
+      "description": "TRANSFERENCIA A CUENTA AHORRO",
+      "description_clean": "TRANSFERENCIA A CUENTA AHORRO",
+      "amount": -500.0,
+      "currency": "EUR",
+      "category": "Other",
+      "bbva_category": "PAGO",
+      "notes": "",
+      "concept": "TRANSFERENCIA A CUENTA AHORRO"
+    },
+    {
+      "date": "02/07/2025",
+      "value_date": "02/07/2025",
+      "description": "COMPRA SUPERMERCADO EJEMPLO",
+      "description_clean": "COMPRA SUPERMERCADO EJEMPLO",
+      "amount": -45.5,
+      "currency": "EUR",
+      "category": "Groceries",
+      "bbva_category": "PAGO",
+      "notes": "",
+      "concept": "COMPRA SUPERMERCADO EJEMPLO"
+    },
+    {
+      "date": "03/07/2025",
+      "value_date": "03/07/2025",
+      "description": "RESTAURANTE EJEMPLO",
+      "description_clean": "RESTAURANTE EJEMPLO",
+      "amount": -28.9,
+      "currency": "EUR",
+      "category": "Food & Dining",
+      "bbva_category": "PAGO",
+      "notes": "",
+      "concept": "RESTAURANTE EJEMPLO"
+    },
+    {
+      "date": "05/07/2025",
+      "value_date": "05/07/2025",
+      "description": "SUSCRIPCION NETFLIX",
+      "description_clean": "SUSCRIPCION NETFLIX",
+      "amount": -12.99,
+      "currency": "EUR",
+      "category": "Entertainment",
+      "bbva_category": "PAGO",
+      "notes": "",
+      "concept": "SUSCRIPCION NETFLIX"
+    },
+    {
+      "date": "08/07/2025",
+      "value_date": "08/07/2025",
+      "description": "GASOLINERA EJEMPLO",
+      "description_clean": "GASOLINERA EJEMPLO",
+      "amount": -50.0,
+      "currency": "EUR",
+      "category": "Transportation",
+      "bbva_category": "PAGO",
+      "notes": "",
+      "concept": "GASOLINERA EJEMPLO"
+    },
+    {
+      "date": "10/07/2025",
+      "value_date": "10/07/2025",
+      "description": "FARMACIA EJEMPLO",
+      "description_clean": "FARMACIA EJEMPLO",
+      "amount": -15.3,
+      "currency": "EUR",
+      "category": "Healthcare",
+      "bbva_category": "PAGO",
+      "notes": "",
+      "concept": "FARMACIA EJEMPLO"
+    },
+    {
+      "date": "15/07/2025",
+      "value_date": "15/07/2025",
+      "description": "NOMINA EMPRESA EJEMPLO",
+      "description_clean": "NOMINA EMPRESA EJEMPLO",
+      "amount": 2500.0,
+      "currency": "EUR",
+      "category": "Income",
+      "bbva_category": "ABONO",
+      "notes": "",
+      "concept": "NOMINA EMPRESA EJEMPLO"
+    },
+    {
+      "date": "20/07/2025",
+      "value_date": "20/07/2025",
+      "description": "ALQUILER VIVIENDA",
+      "description_clean": "ALQUILER VIVIENDA",
+      "amount": -800.0,
+      "currency": "EUR",
+      "category": "Housing",
+      "bbva_category": "PAGO",
+      "notes": "",
+      "concept": "ALQUILER VIVIENDA"
+    },
+    {
+      "date": "22/07/2025",
+      "value_date": "22/07/2025",
+      "description": "GIMNASIO MENSUALIDAD",
+      "description_clean": "GIMNASIO MENSUALIDAD",
+      "amount": -35.0,
+      "currency": "EUR",
+      "category": "Sports",
+      "bbva_category": "PAGO",
+      "notes": "",
+      "concept": "GIMNASIO MENSUALIDAD"
+    },
+    {
+      "date": "25/07/2025",
+      "value_date": "25/07/2025",
+      "description": "COMPRA ONLINE AMAZON",
+      "description_clean": "COMPRA ONLINE AMAZON",
+      "amount": -89.99,
+      "currency": "EUR",
+      "category": "Groceries",
+      "bbva_category": "PAGO",
+      "notes": "",
+      "concept": "COMPRA ONLINE AMAZON"
+    }
+  ],
+  "metadata": {
+    "original_count": 10,
+    "anonymized_count": 10,
+    "anonymization_time": 0.0005500316619873047,
+    "method": "adaptive_multilayer"
+  }
+}
