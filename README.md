@@ -1,6 +1,6 @@
-# 💰 Pregunta a tus Finanzas - Sistema RAG Financiero con LightRAG
+# 💰 Pregunta a tus Finanzas - Sistema Agentic RAG Financiero
 
-Sistema open source para analizar extractos bancarios usando RAG (Retrieval-Augmented Generation) con LightRAG real y GPT-4o-mini. Convierte tus transacciones en un grafo de conocimiento consultable con lenguaje natural.
+Sistema open source para analizar extractos bancarios usando RAG (Retrieval-Augmented Generation) con LightRAG y GPT-4o-mini. Convierte tus transacciones en un grafo de conocimiento consultable con lenguaje natural.
 
 ## 🌟 Características Principales
 
@@ -208,13 +208,6 @@ MIT License - Ver [LICENSE](LICENSE) para detalles
 - CTO @ M.IA (himia.app)
 - LinkedIn: [albertgilopez](https://linkedin.com/in/albertgilopez)
 - Email: albert.gil@yourtechtribe.com
-
-## 🙏 Agradecimientos
-
-- Universidad de Hong Kong por LightRAG
-- Microsoft por Presidio
-- OpenAI por los modelos de embeddings
-- Comunidad open source
 
 ---
 
