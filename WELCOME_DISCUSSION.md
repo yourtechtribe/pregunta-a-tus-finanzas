@@ -41,12 +41,14 @@ Actualmente:
 
 ## 🗺️ Roadmap
 
-Próximas características planeadas:
-- 📱 Interfaz web con Streamlit
-- 🤖 Sistema multiagente para 99% precisión
-- 🏦 Soporte para más bancos
-- 📊 Análisis predictivo
-- 🔄 Sincronización automática
+Ver el [Roadmap completo](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/blob/main/docs/ROADMAP.md) para todos los detalles.
+
+**Próximas características (Q4 2025 - Q1 2026):**
+- 📱 Dashboard web con Streamlit
+- 🏦 Soporte para Santander, CaixaBank, Sabadell, ING
+- 🤖 Sistema multiagente con Google ADK (99% precisión)
+- 📊 Análisis predictivo y recomendaciones
+- 🔄 Parser universal AEB43
 
 Vota tus favoritas o propón nuevas en [Ideas](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions/new?category=ideas).
 
