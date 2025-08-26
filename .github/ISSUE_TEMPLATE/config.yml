@@ -1,0 +1,20 @@
+# Configuration for issue templates
+
+blank_issues_enabled: false
+
+contact_links:
+  - name: Discusiones de la Comunidad
+    url: https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions
+    about: Para discusiones generales, ideas y preguntas abiertas
+    
+  - name: Documentación del Proyecto
+    url: https://github.com/yourtechtribe/pregunta-a-tus-finanzas/blob/main/README.md
+    about: Consulta primero la documentación completa
+    
+  - name: Guía de Instalación
+    url: https://github.com/yourtechtribe/pregunta-a-tus-finanzas/blob/main/docs/INSTALLATION.md
+    about: Instrucciones detalladas de instalación y configuración
+    
+  - name: Email de Contacto
+    url: mailto:albert.gil@yourtechtribe.com
+    about: Para temas privados o colaboraciones empresariales
