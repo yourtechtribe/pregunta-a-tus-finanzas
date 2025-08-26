@@ -18,8 +18,8 @@
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/albertgilopez/pregunta-tus-finanzas.git
-cd pregunta-tus-finanzas
+git clone https://github.com/yourtechtribe/pregunta-a-tus-finanzas.git
+cd pregunta-a-tus-finanzas
 ```
 
 ### 2. Crear Entorno Virtual
@@ -338,8 +338,8 @@ Próximos pasos:
 
 Si encuentras problemas:
 
-1. Revisa los [Issues](https://github.com/albertgilopez/pregunta-tus-finanzas/issues) existentes
-2. Busca en [Discussions](https://github.com/albertgilopez/pregunta-tus-finanzas/discussions)
+1. Revisa los [Issues](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/issues) existentes
+2. Busca en [Discussions](https://github.com/yourtechtribe/pregunta-a-tus-finanzas/discussions)
 3. Abre un nuevo issue con:
    - Versión de Python
    - Sistema operativo
